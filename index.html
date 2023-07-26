@@ -15,10 +15,10 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- goggle fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <!-- goggle fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
   <!-- custom tailwind -->
   <script>
     tailwind.config = {
@@ -26,19 +26,20 @@
         extend: {
           colors: {
             clifford: '#da373d',
-            'primary-color':'#F85559',
-            'secondary-color':'#FFF',
+            'primary-color': '#F85559',
+            'secondary-color': '#FFF',
           }
+
         }
       }
     }
   </script>
-<!-- custom class -->
-<style>
-  .font-lato{
-    font-family: 'Lato', sans-serif;
-  }
-</style>
+  <!-- custom class -->
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
 </head>
 
 <body class="font-lato">
@@ -46,21 +47,23 @@
   <header>
     <!-- nav start -->
     <nav class="max-w-screen-lg mx-auto my-5 md:my-5 ">
-      
-        <div>
-          <div class=" md:hidden flex justify-between bg-secondary-color px-4  rounded-full">
-            <div class="flex items-center gap-1  ">
-              <img  class="w-7"src="./images/logo.png" alt="">
-              <a class=" normal-case  font-bold text-xl">FruitBurst</a>
-            </div>
+
+      <div>
+        <div class=" md:hidden flex justify-between bg-secondary-color px-4  rounded-full">
+          <div class="flex items-center gap-1  ">
+            <img class="w-7" src="./images/logo.png" alt="">
+            <a class=" normal-case  font-bold text-xl">FruitBurst</a>
+          </div>
           <div class="dropdown font-normal]">
             <label tabindex="0" class="btn btn-ghost md:hidden lg:hidden ">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 class="inline-block w-5 h-5 stroke-current">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
               </svg>
             </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-0 shadow bg-base-100 rounded-box w-70 font-[400]">
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-0 shadow bg-base-100 rounded-box w-70 font-[400]">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
@@ -68,14 +71,15 @@
               <li><a>
                   <div class="form-control relative">
                     <i class="fa-solid fa-magnifying-glass absolute top-2 left-2 "></i>
-                    <input  type="text"   class="input input-bordered w-11  h-8  text-[5px] text-left" />
+                    <input type="text" class="input input-bordered w-11  h-8  text-[5px] text-left" />
                   </div>
                 </a></li>
             </ul>
           </div>
-          
+
         </div>
-        <div class=" hidden bg-primary-color text-secondary-color py-2 pl-3 pr-5 rounded-full md:flex justify-between items-center lg:flex">
+        <div
+          class=" hidden bg-primary-color text-secondary-color py-2 pl-3 pr-5 rounded-full md:flex justify-between items-center lg:flex">
           <div class="flex-auto">
             <ul class="menu menu-horizontal px-1 items-center">
               <li><a>Home</a></li>
@@ -84,10 +88,10 @@
               <li><a>All Fruits</a></li>
             </ul>
           </div>
-          
+
           <div class="flex justify-between flex-auto">
             <div class="flex items-center gap-1  ">
-              <img  class="w-7" src="./images/logo.png" alt="">
+              <img class="w-7" src="./images/logo.png" alt="">
               <a class=" normal-case  font-bold text-xl mr-3">FruitBurst</a>
             </div>
           </div>
@@ -100,10 +104,77 @@
             </a>
           </div>
         </div>
-        
+
     </nav>
-    
-      
+
+    <!-- Carousel start -->
+    <section class="max-w-screen-lg mx-auto relative  px-4 md:px-0">
+      <div class="carousel w-full max-h-[calc(100vh-115px)] ">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./images/banner1.png" class="w-full bg-gradient-to-r from-[#121212] to-[#121212]" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/banner2.png" class="w-full bg-gradient-to-r from-[#121212] to-[#121212]" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./images/banner3.png" class="w-full bg-gradient-to-r from-[#121212] to-[#121212]" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="/images/banner4.png" class="w-full bg-gradient-to-r from-[#121212] to-[#121212]" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="absolute top-[10%] left-[28%] space-y-1 md:top-[15%] md:left-[35%] md:space-y-5 ">
+        <h3 class="text-xl md:text-4xl text-secondary-color font-extrabold">Exotic tastes at your <br><span
+            class="flex justify-center">doorstep</span></h3>
+        <p class="text-xs md:text-base text-secondary-color flex justify-center">We supply highly quality organic
+          products</p>
+        <div class="flex justify-center">
+          <button class="px-2 py-2  md:px-5 md:py-4 lg:mt-3  rounded-lg bg-primary-color text-secondary-color">Shop now</button>
+        </div>
+      </div>
+      <div class="opacity-0 md:opacity-[1] w-[80%] flex mx-auto  rounded-lg bg-secondary-color shadow-lg shadow-[#0000000D] justify-between items-center absolute lg:bottom-[-9%] lg:left-[10%] md:bottom-[-18%] md:left-[10%] py-2 px-2">
+           <div>
+            <img class="w-20 mb-3"src="./images/fruit1.png" alt="">
+            <p >Strawberry</p>
+           </div>
+           <div>
+            <img class="w-20 mb-0" src="./images/fruit2.png" alt="">
+            <p>Orange</p>
+           </div>
+           <div>
+            <img class="w-20 mb-3" src="./images/fruit3.png" alt="">
+            <p> Mango</p>
+           </div>
+           <div>
+            <img class="w-20 mb-3" src="./images/fruit4.png" alt="">
+            <p>Strawberry</p>
+           </div>
+           <div>
+            <img  class="w-20 mb-3" src="./images/fruit5.png" alt="">
+            <p> Mango</p>
+           </div>
+      </div>
+
+
+    </section>
   </header>
 
   <!-- main start -->
