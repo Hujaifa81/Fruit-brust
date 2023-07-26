@@ -2,48 +2,119 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit burst</title>
-    
-    <!-- CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit burst</title>
 
-    <!--font awesome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- custom tailwind -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <!--font awesome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- goggle fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <!-- custom tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color':'#F85559',
+            'secondary-color':'#FFF',
           }
         }
-      </script>
-
-
+      }
+    }
+  </script>
+<!-- custom class -->
+<style>
+  .font-lato{
+    font-family: 'Lato', sans-serif;
+  }
+</style>
 </head>
 
-<body>
-<!-- header start -->
-<header>
+<body class="font-lato">
+  <!-- header start -->
+  <header>
+    <!-- nav start -->
+    <nav class="max-w-screen-lg mx-auto my-5 md:my-5 ">
+      
+        <div>
+          <div class=" md:hidden flex justify-between bg-secondary-color px-4  rounded-full">
+            <div class="flex items-center gap-1  ">
+              <img  class="w-7"src="./images/logo.png" alt="">
+              <a class=" normal-case  font-bold text-xl">FruitBurst</a>
+            </div>
+          <div class="dropdown font-normal]">
+            <label tabindex="0" class="btn btn-ghost md:hidden lg:hidden ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                class="inline-block w-5 h-5 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-0 shadow bg-base-100 rounded-box w-70 font-[400]">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+              <li><a>
+                  <div class="form-control relative">
+                    <i class="fa-solid fa-magnifying-glass absolute top-2 left-2 "></i>
+                    <input  type="text"   class="input input-bordered w-11  h-8  text-[5px] text-left" />
+                  </div>
+                </a></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class=" hidden bg-primary-color text-secondary-color py-2 pl-3 pr-5 rounded-full md:flex justify-between items-center lg:flex">
+          <div class="flex-auto">
+            <ul class="menu menu-horizontal px-1 items-center">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          
+          <div class="flex justify-between flex-auto">
+            <div class="flex items-center gap-1  ">
+              <img  class="w-7" src="./images/logo.png" alt="">
+              <a class=" normal-case  font-bold text-xl mr-3">FruitBurst</a>
+            </div>
+          </div>
+          <div class="flex-auto">
+            <a>
+              <div class="form-control relative">
+                <i class="fa-solid fa-magnifying-glass absolute top-2 right-4 text-black"></i>
+                <input type="text" placeholder="Search" class="input rounded-full w-85 h-8" />
+              </div>
+            </a>
+          </div>
+        </div>
+        
+    </nav>
+    
+      
+  </header>
 
-</header>
+  <!-- main start -->
+  <main>
 
-<!-- main start -->
-<main>
+  </main>
 
-</main>
+  <!-- footer start -->
+  <footer>
 
-<!-- footer start -->
-<footer>
-
-</footer>
+  </footer>
 </body>
 
 </html>
