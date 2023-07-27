@@ -314,11 +314,11 @@
      
     <!-- Team section  -->
     <section class="my-5">
-      <div class="bg-[url('./images/team.png')] bg-[#121212] min-h-[80vh] bg-cover bg-center py-14">
+      <div class="bg-[url('./images/team.png')] bg-[#121212] min-h-[80vh] bg-cover bg-center py-14 md:py-20 lg:py-16">
            <h3 class="text-center text-4xl font-extrabold text-secondary-color">Meet the team section</h3>
            <p class="text-center my-4 text-secondary-color">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
            <!-- profile -->
-           <div class="w-[50%] md:w-[75%] mx-auto grid grid-cols-1 md:grid-cols-4 justify-center">
+           <div class="w-[50%] md:w-[75%] mx-auto flex flex-col items-center md:grid  md:grid-cols-4 justify-center md:my-10">
             <!-- member-1  -->
             <div class="text-secondary-color">
               <img src="./images/member1.png" alt="">
@@ -458,7 +458,33 @@
   </main>
 
   <!-- footer start -->
-  <footer>
+  <footer class="mt-12 ">
+    <div class="min-h-[20vh] bg-[#121212] py-20">
+      <div class="flex items-center gap-1 justify-center ">
+        <img class="w-7" src="./images/logo.png" alt="">
+        <a class=" normal-case  font-bold text-xl text-secondary-color">FruitBurst</a>
+      </div>
+      <div class="px-8 flex justify-center my-5">
+        <ul class="flex  list-none text-secondary-color gap-2 md:gap-10">
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">Support</a></li>
+          <li><a href="">My Account</a></li>
+        </ul>   
+      </div>
+      <div class="px-8 flex justify-center my-5">
+        <ul class="flex  list-none text-secondary-color gap-10">
+          <li><a href=""><i class="fa-brands fa-twitter text-secondary-color"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-apple"></i></a></li>
+        </ul>  
+      </div>
+    </div>
+    
 
   </footer>
 </body>
